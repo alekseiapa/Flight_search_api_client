@@ -51,35 +51,3 @@ for destination_code in destinations:
             link = f"https://www.google.co.uk/flights?hl=en#flt={flight.origin_airport}.{flight.destination_airport}.{flight.out_date}*{flight.destination_airport}.{flight.origin_airport}.{flight.return_date}"
             message = f"Low price alert! The flight from {flight.origin_city} to {flight.destination_city} is for CNY {flight.price}\nDeparture date: {flight.out_date} to {flight.return_date}"
             notification_manager.send_email(email, message, link)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#     data_manager.update_destination_data()
-#     data_manager.destination_data = sheet_data
-# for city in sheet_data:
-#     flight = flight_search.check_flights(ORIGIN_CITY_IATA, city['iataCode'], DATA_FROM, DATA_TO)
-#     if flight is None:
-#         continue
-#     if city["lowestPrice"] < flight.price:
-#         print(f"Low price alert! The flight from {flight.cityFrom} to {flight.cityTo} is for CNY {flight.price}\nDeparture date: {flight.utc_arrival} to {flight.utc_departure}")
-#         print("Buy it!\n\n")
-
-
-
-
-
-
-
-
